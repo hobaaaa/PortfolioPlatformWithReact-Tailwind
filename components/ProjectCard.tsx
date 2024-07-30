@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         initial="hidden"
         animate="visible"
         exit="hidden"
-        transition={{ duration: 0.5, ease: "easeIn" }}
+        transition={{ duration: 0.3, ease: "easeIn" }}
         className="project-card flex justify-center  my-8"
         whileHover={{ translateY: -20, scale: 1.02 }}
       >
