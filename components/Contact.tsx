@@ -1,6 +1,7 @@
 "use client";
 
-import { FormEvent, useState, ChangeEvent } from "react";
+import { FormEvent, useState, ChangeEvent, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -17,6 +18,8 @@ export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
 
+  const form = useRef<HTMLFormElement>(null);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -28,24 +31,21 @@ export default function Contact() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const result = await emailjs.sendForm(
+        process.env.SERVICE_ID!, // EmailJS servis ID'niz
+        process.env.TEMPLATE_ID!, // EmailJS şablon ID'niz
+        form.current!,
+        process.env.EMAILJS_PUBLIC_KEY! // EmailJS public key'iniz
+      );
 
-      if (response.ok) {
+      if (result.status === 200) {
         setResponseMessage("Mesajınız başarıyla gönderildi!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        const data = await response.json();
-        setResponseMessage(
-          data.error || "Bir hata oluştu. Lütfen tekrar deneyin."
-        );
+        setResponseMessage("Bir hata oluştu. Lütfen tekrar deneyin.");
       }
     } catch (error) {
+      console.error("FAILED...", error);
       setResponseMessage("Bir hata oluştu. Lütfen tekrar deneyin.");
     } finally {
       setIsLoading(false);
@@ -56,7 +56,7 @@ export default function Contact() {
     <div className="mx-4 pt-3 container mx-auto">
       <div className="">
         <h1 className="text-3xl font-bold">İletişim</h1>
-        <form onSubmit={handleSubmit} className="text-lg mt-4">
+        <form onSubmit={handleSubmit} className="text-lg mt-4" ref={form}>
           <div className="grid grid-cols-3 mb-4">
             <label htmlFor="name" className="">
               Adınız:{" "}
