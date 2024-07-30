@@ -13,12 +13,12 @@ export async function POST(request: Request) {
   }
 
   const transporter = nodemailer.createTransport({
-    host: process.env.NEXT_PUBLIC_MAIL_HOST,
-    port: parseInt(process.env.NEXT_PUBLIC_MAIL_PORT || '465', 10),
+    host: process.env.MAIL_HOST,
+    port: parseInt(process.env.MAIL_PORT || '465', 10),
     secure: true,
     auth: {
-      user: process.env.NEXT_PUBLIC_MAIL_USERNAME,
-      pass: process.env.NEXT_PUBLIC_MAIL_PASSWORD,
+      user: process.env.MAIL_USERNAME,
+      pass: process.env.MAIL_PASSWORD,
     },
   });
 
