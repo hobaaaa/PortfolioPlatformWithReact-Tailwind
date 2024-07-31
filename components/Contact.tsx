@@ -32,10 +32,10 @@ export default function Contact() {
 
     try {
       const result = await emailjs.sendForm(
-        process.env.SERVICE_ID!, // EmailJS servis ID'niz
-        process.env.TEMPLATE_ID!, // EmailJS şablon ID'niz
+        process.env.NEXT_PUBLIC_SERVICE_ID!, // EmailJS servis ID'niz
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!, // EmailJS şablon ID'niz
         form.current!,
-        process.env.EMAILJS_PUBLIC_KEY! // EmailJS public key'iniz
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! // EmailJS public key'iniz
       );
 
       if (result.status === 200) {
