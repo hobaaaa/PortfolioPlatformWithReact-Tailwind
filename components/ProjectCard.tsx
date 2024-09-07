@@ -13,7 +13,7 @@ const MotionDiv = dynamic(
 interface Project {
   title: string;
   description: string;
-  image: string;
+  images: string[];
   slug: string;
 }
 const cardVariants = {
@@ -30,16 +30,17 @@ export default function ProjectCard({ project }: { project: Project }) {
         animate="visible"
         exit="hidden"
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="project-card flex justify-center  my-8"
+        className="project-card flex justify-center  mt-8"
         whileHover={{ translateY: -20, scale: 1.02 }}
       >
         <div className="project-card">
           <Image
-            src={project.image}
+            src={project.images[0]}
             alt={project.title}
             width={400}
             height={300}
             priority
+            className="rounded-lg shadow-2xl"
           />
           <h2 className="text-xl font-bold">{project.title}</h2>
           <p className="pb-3 text-lg">{project.description}</p>

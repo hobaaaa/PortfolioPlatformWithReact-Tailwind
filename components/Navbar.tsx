@@ -19,7 +19,7 @@ function Navbar() {
             <Image
               src="/images/logo.png"
               width={250}
-              height={50}
+              height={76.16}
               alt="Site Logo"
               className="mx-auto"
             ></Image>
@@ -41,10 +41,18 @@ function Navbar() {
           <ul className="flex flex-col lg:flex-row list-none ml-auto">
             <li className="flex items-center">
               <Link
+                href="/"
+                className="bg-white text-slate-700 active:bg-slate-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:bg-slate-500 hover:text-white outline-none focus:outline-none md:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+              >
+                <i className="fa-solid fa-house"></i> Anasayfa
+              </Link>
+            </li>
+            <li className="flex items-center">
+              <Link
                 href="/projects"
                 className="bg-white text-slate-700 active:bg-slate-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:bg-slate-500 hover:text-white outline-none focus:outline-none md:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
               >
-                <i className="fas fa-arrow-alt-circle-right"></i> Projects
+                <i className="fas fa-arrow-alt-circle-right"></i> Projeler
               </Link>
             </li>
             <li className="flex items-center">
@@ -53,7 +61,7 @@ function Navbar() {
                 className="bg-white text-slate-700 active:bg-slate-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:bg-slate-500 hover:text-white outline-none focus:outline-none md:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
               >
                 <i className="far fa-file-alt leading-lg mr-2 md:text-grey-200 text-grey-400"></i>
-                About Me
+                Hakkımda
               </Link>
             </li>
             <li className="flex items-center">
@@ -61,7 +69,7 @@ function Navbar() {
                 href="/contact"
                 className="bg-white text-slate-700 active:bg-slate-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:bg-slate-500 hover:text-white outline-none focus:outline-none md:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
               >
-                <i className="fa-solid fa-square-phone"></i> Contact
+                <i className="fa-solid fa-square-phone"></i> İletişim
               </Link>
             </li>
           </ul>

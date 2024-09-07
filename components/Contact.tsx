@@ -54,10 +54,9 @@ export default function Contact() {
 
   return (
     <div className="mx-4 pt-3 container mx-auto">
-      <div className="">
-        <h1 className="text-3xl font-bold">İletişim</h1>
+      <div className="pt-3">
         <form onSubmit={handleSubmit} className="text-lg mt-4" ref={form}>
-          <div className="grid grid-cols-3 mb-4">
+          <div className="grid grid-cols-4 mb-4">
             <label htmlFor="name" className="">
               Adınız:{" "}
             </label>
@@ -68,10 +67,10 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="col-span-2 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:border-blue-500"
+              className="col-span-3 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:border-blue-500"
             />
           </div>
-          <div className="grid grid-cols-3 mb-4">
+          <div className="grid grid-cols-4 mb-4">
             <label htmlFor="email">E-posta: </label>
             <input
               type="email"
@@ -80,10 +79,10 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="col-span-2 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:border-blue-500"
+              className="col-span-3 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:border-blue-500"
             />
           </div>
-          <div className="grid grid-cols-3 mb-4">
+          <div className="grid grid-cols-4 mb-4">
             <label htmlFor="message">Mesajınız: </label>
             <textarea
               id="message"
@@ -91,7 +90,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="col-span-2 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:border-blue-500 "
+              className="col-span-3 border border-gray-300 text-sm rounded-lg block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:border-blue-500 "
             />
           </div>
           <div className="grid justify-end">

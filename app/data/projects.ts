@@ -1,31 +1,48 @@
-// app/data/projects.ts
 interface Project {
   title: string;
   description: string;
-  image: string;
+  images: string[];
   slug: string;
 }
 
 const projectsData: Project[] = [
   {
-    title: "Project 1",
-    description: "Description 1",
-    image: "/images/project1.jpg",
+    title: "Safir Havuz",
+    description: "Safir Havuz firması için yaptığımız websitemizdir.",
+    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
     slug: "project-1",
   },
   {
-    title: "Project 2",
-    description: "Description 2",
-    image: "/images/project1.jpg",
+    title: "Birtürk İnşaat",
+    description: "Birtürk İnşaat firması için yaptığımız websitemizdir.",
+    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
     slug: "project-2",
   },
   {
-    title: "Project 3",
-    description: "Description 3",
-    image: "/images/project1.jpg",
+    title: "Atomm Petshop",
+    description: "Atomm Petshop firması için yaptığımız websitemizdir.",
+    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
     slug: "project-3",
   },
-  // Diğer projelerinizi buraya ekleyin
+  {
+    title: "Weather App",
+    description: "Weather App Next.JS ile yapılmış bir havadurumu uygulamasıdır.",
+    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
+    slug: "project-3",
+  },
+  {
+    title: "Blog App",
+    description: "Blog App Next.JS ile yapılmış bir blog uygulamasıdır..",
+    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
+    slug: "project-3",
+  },
+  {
+    title: "News App",
+    description: "News App Next.JS ile yapılmış bir haberler uygulamasıdır.",
+    images: ["/images/project1.jpg","/images/project1.jpg","/images/project1.jpg"],
+    slug: "project-3",
+  },
+  // Dİğer Projeleri buraya ekleyeceğiz.
 ];
 
 export default projectsData;
