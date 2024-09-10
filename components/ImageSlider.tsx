@@ -72,7 +72,7 @@ export default function ImageSlider(): JSX.Element {
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative w-full flex-shrink-0 w-[calc(100%-2px)] mx-[1px] "
+            className="relative w-full flex-shrink-0 w-[calc(100%-2px)] mr-[2px] "
           >
             <Image
               src={image.src}
