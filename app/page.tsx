@@ -1,17 +1,21 @@
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import projectsData from "@/app/data/projects";
+import ImageSlider from "@/components/ImageSlider";
 
 export default function HomePage() {
   const featuredProjects = projectsData.slice(0, 3);
 
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto">
+      <section className="mx-1">
+        <ImageSlider />
+      </section>
       <section className="hero text-center bg-gray-300 mb-3 rounded-md px-5 py-5">
         <h1 className="text-3xl font-bold pb-4">
           Merhaba! Ben Deniz Gökbudak.
         </h1>
-        <p className="text-lg">
+        <p className="text-lg lg:px-16 lg:mx-16">
           Yazılım geliştirme ve web tasarımı konularında deneyim ve tutkuya
           sahip bir profesyonelim. Bu sitede, yaratıcı projelerim, geliştirdiğim
           uygulamalar ve tasarımlarım hakkında bilgi bulabilirsiniz. Kendi
@@ -37,7 +41,7 @@ export default function HomePage() {
 
       <section className="about bg-gray-300 px-5 py-5 rounded-md">
         <h2 className="text-2xl font-bold">Ben Kimim?</h2>
-        <p className="pb-3 text-lg">
+        <p className="pb-3 text-lg ">
           Merhaba! Ben Deniz Gökbudak,teknolojinin ve yaratıcı problemlerin
           peşinden koşan bir yazılım geliştiricisi ve web tasarımcısıyım. Bu web
           sitesinde, projelerim ve çalışmalarım hakkında kısa bir bilgi
