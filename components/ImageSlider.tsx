@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import image1 from "@/public/images/image1.jpg";
-import image2 from "@/public/images/image2.jpg";
-import image3 from "@/public/images/image3.jpg";
+import image1 from "@/public/images/image1.png";
+import image2 from "@/public/images/image2.png";
+import image3 from "@/public/images/image3.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ImageData {
@@ -64,7 +64,7 @@ export default function ImageSlider(): JSX.Element {
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className="h-screen w-full flex transition ease-out duration-500"
+        className="h-56 sm:h-72 md:h-96 lg:h-[500px] xl:h-screen w-full  flex transition ease-out duration-500"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}

@@ -28,7 +28,7 @@ export default function ProjectDetailPage({
       <h1 className="text-4xl font-bold text-center py-5 border-b border-black">
         {project.title}
       </h1>
-      <div className="md:grid grid-cols-2 gap-4 md:my-6">
+      <div className="md:grid grid-cols-2 gap-4 md:my-6 mx-3">
         {/* Görselleri map ile render ediyoruz */}
         {project.images.map((imageSrc, index) => (
           <Image
