@@ -30,17 +30,17 @@ export default function ProjectCard({ project }: { project: Project }) {
         animate="visible"
         exit="hidden"
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="project-card flex justify-center  mt-8"
+        className="project-card    mt-8"
         whileHover={{ translateY: -20, scale: 1.02 }}
       >
-        <div className="project-card">
+        <div className="project-card text-center">
           <Image
             src={project.images[0]}
             alt={project.title}
             width={400}
             height={300}
             priority
-            className="rounded-lg shadow-2xl"
+            className="rounded-lg shadow-2xl mx-auto mb-4"
           />
           <h2 className="text-xl font-bold">{project.title}</h2>
           <p className="pb-3 text-lg">{project.description}</p>

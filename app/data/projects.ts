@@ -27,20 +27,20 @@ const projectsData: Project[] = [
   {
     title: "Weather App",
     description: "Weather App Next.JS ile yapılmış bir havadurumu uygulamasıdır.",
-    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
-    slug: "project-3",
+    images: ["/images/project11.png", "/images/project11.png", "/images/project11.png"],
+    slug: "project-4",
   },
   {
     title: "Blog App",
     description: "Blog App Next.JS ile yapılmış bir blog uygulamasıdır..",
-    images: ["/images/project1.jpg", "/images/project1.jpg", "/images/project1.jpg"],
-    slug: "project-3",
+    images: ["/images/project11.png", "/images/project11.png", "/images/project11.png"],
+    slug: "project-5",
   },
   {
     title: "News App",
     description: "News App Next.JS ile yapılmış bir haberler uygulamasıdır.",
-    images: ["/images/project1.jpg","/images/project1.jpg","/images/project1.jpg"],
-    slug: "project-3",
+    images: ["/images/project11.png","/images/project11.png","/images/project11.png"],
+    slug: "project-6",
   },
   // Dİğer Projeleri buraya ekleyeceğiz.
 ];
