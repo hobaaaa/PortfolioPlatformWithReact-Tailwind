@@ -24,3 +24,11 @@ Bu, Next.js ile oluşturulmuş bir portföy web sitesidir.
 - **Resim Optimizasyonu**: Daha hızlı yükleme için  `next/image` kullanarak resimleri optimize eder.
 - **Dinamik Yönlendirme**: Eşsiz URL'ler ile ayrı proje sayfaları oluşturur.
 - **Duyarlı Tasarım**: Farklı ekran boyutlarına ve cihazlara uyum sağlar.
+
+  ## Geliştirici Bilgileri
+
+- **Deniz Gökbudak**: Projenin geliştiricisi. [GitHub Profilim](https://github.com/hobaaaa)
+
+---
+
+Herhangi bir sorun veya katkı öneriniz varsa, lütfen [GitHub İssues](https://github.com/hobaaaa/blog-app-nextjs/issues) sayfasından bana ulaşın.
