@@ -16,7 +16,7 @@ This is a portfolio website built with Next.js.
 
 ---
 
-If you have any issues or suggestions for improvement, please reach out to me on the [GitHub İssues](https://github.com/hobaaaa/blog-app-nextjs/issues) page.
+If you have any issues or suggestions for improvement, please reach out to me on the [GitHub İssues](https://github.com/hobaaaa/portfolio-app/issues) page.
 
 
 # Next.js Portföy Uygulaması
@@ -38,4 +38,4 @@ Bu, Next.js ile oluşturulmuş bir portföy web sitesidir.
 
 ---
 
-Herhangi bir sorun veya katkı öneriniz varsa, lütfen [GitHub İssues](https://github.com/hobaaaa/blog-app-nextjs/issues) sayfasından bana ulaşın.
+Herhangi bir sorun veya katkı öneriniz varsa, lütfen [GitHub İssues](https://github.com/hobaaaa/portfolio-app/issues) sayfasından bana ulaşın.
