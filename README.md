@@ -11,6 +11,13 @@ This is a portfolio website built with Next.js.
 - **Dynamic Routing:** Creates individual project pages with unique URLs.
 - **Responsive Design:** Adapts to different screen sizes and devices.
 
+## Developer Information
+- **Deniz Gökbudak** : Developer of the project. [GitHub Profile](https://github.com/hobaaaa)
+
+---
+
+If you have any issues or suggestions for improvement, please reach out to me on the [GitHub İssues](https://github.com/hobaaaa/blog-app-nextjs/issues) page.
+
 
 # Next.js Portföy Uygulaması
 
